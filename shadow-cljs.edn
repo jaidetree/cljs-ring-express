@@ -1,0 +1,14 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"]
+
+ :dependencies
+ [[kitchen-async "0.1.0-SNAPSHOT"]
+  [reagent "1.0.0"]]
+
+ :builds
+ {:backend {:target    :node-script
+            :output-to "build/server.js"
+            :main      ring-express.server/main
+            :devtools {:before-load-async ring-express.server/stop
+                       :after-load        ring-express.server/start}}}}

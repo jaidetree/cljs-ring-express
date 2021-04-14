@@ -1,0 +1,20 @@
+#+title: ClojureScript Express Server
+
+* Why
+
+* Usage
+
+* Testing
+
+** Send a POST request
+
+#+begin_src bash :results output
+curl -X POST -H "Content-Type: application/json" \
+    -d '{"name": "Test User", "email": "jsontest@example.com"}' \
+    http://localhost:4000/
+#+end_src
+
+#+RESULTS:
+: <h1 data-reactroot="">Hello World</h1>
+
+* Resources
